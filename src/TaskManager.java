@@ -29,10 +29,7 @@ public class TaskManager {
     }
 
     public boolean isEmpty() {
-        if (this.commonList.size() == 0) {
-            return true;
-        }
-        return false;
+        return this.commonList.isEmpty();
     }
 
     public Task searchTaskById(int id) {
