@@ -1,7 +1,5 @@
 import java.util.Iterator;
 
-//Iterator<String> - обучение применению на практике информации из Лекции 3 - перебор полей класса.
-//Используется далее для вывода информации в cvs-файл - каждое поле в разном столбце.
 public class WorkTask extends Task implements Iterator<String> {
     protected String initiator;
 
