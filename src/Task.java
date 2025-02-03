@@ -170,6 +170,10 @@ public abstract class Task implements Iterator<String>, Comparable<Task> {
 
     @Override
     public boolean hasNext() {
-        return this.index++ < 7;
+        if (index >= 7) {
+            index = 0; // Сброс индекса после завершения итерации
+            return false;
+        }
+        return index++ < 7;    
     }
 }
