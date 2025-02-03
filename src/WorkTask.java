@@ -51,6 +51,10 @@ public class WorkTask extends Task implements Iterator<String> {
 
     @Override
     public boolean hasNext() {
+        if (index >= 8) {
+        index = 0; // Сброс индекса после завершения итерации
+        return false;
+        }
         return this.index++ < 8;
     }
 
